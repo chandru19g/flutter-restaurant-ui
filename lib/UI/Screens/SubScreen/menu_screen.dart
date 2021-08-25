@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/components/menu_category.dart';
-import 'package:flutter_app/components/menu_dish.dart';
-import 'package:flutter_app/components/menu_header.dart';
-import 'package:flutter_app/components/menu_options.dart';
-import 'package:flutter_app/components/menu_section.dart';
+import 'package:flutter_app/Ui/components/menu_category.dart';
+import 'package:flutter_app/Ui/components/menu_dish.dart';
+import 'package:flutter_app/Ui/components/menu_header.dart';
+import 'package:flutter_app/Ui/components/menu_options.dart';
+import 'package:flutter_app/Ui/components/menu_section.dart';
 
 class MenuScreen extends StatefulWidget {
   MenuScreen({Key? key}) : super(key: key);

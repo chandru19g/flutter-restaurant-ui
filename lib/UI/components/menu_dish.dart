@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/components/dish_list.dart';
+import 'package:flutter_app/Ui/components/dish_list.dart';
 
 Widget menuDish(Size size, String title) {
   return Padding(

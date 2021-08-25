@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/components/home_header.dart';
-import 'package:flutter_app/components/home_options.dart';
-import 'package:flutter_app/components/items_list.dart';
-import 'package:flutter_app/components/offer_card.dart';
-import 'package:flutter_app/components/restaurants.dart';
-import 'package:flutter_app/components/searchbar.dart';
+import 'package:flutter_app/Ui/components/home_header.dart';
+import 'package:flutter_app/Ui/components/home_options.dart';
+import 'package:flutter_app/Ui/components/items_list.dart';
+import 'package:flutter_app/Ui/components/offer_card.dart';
+import 'package:flutter_app/Ui/components/restaurants.dart';
+import 'package:flutter_app/Ui/components/searchbar.dart';
 
 class OrderScreen extends StatefulWidget {
   OrderScreen({Key? key}) : super(key: key);
@@ -35,7 +35,7 @@ class _OrderScreenState extends State<OrderScreen> {
             child: Column(
               children: <Widget>[
                 header(size),
-                searchBar(size),
+                searchBar( context, size),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: optionsAvailable(size, options),

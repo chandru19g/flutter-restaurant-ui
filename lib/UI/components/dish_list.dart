@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 Widget dishList(Size size, String title, String subTitle, int price, String description) {

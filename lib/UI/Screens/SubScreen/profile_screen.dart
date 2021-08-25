@@ -1,10 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_app/components/account_list.dart';
-import 'package:flutter_app/components/divider_line.dart';
-import 'package:flutter_app/components/expand_child.dart';
-import 'package:flutter_app/components/expand_header.dart';
-import 'package:flutter_app/components/user_details.dart';
+import 'package:flutter_app/Ui/components/account_list.dart';
+import 'package:flutter_app/Ui/components/divider_line.dart';
+import 'package:flutter_app/Ui/components/expand_child.dart';
+import 'package:flutter_app/Ui/components/expand_header.dart';
+import 'package:flutter_app/Ui/components/user_details.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -113,25 +114,22 @@ class ProfileScreen extends StatelessWidget {
                 color: Colors.grey[300],
               ),
             ),
-            Padding(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 15.0, vertical: 10.0),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, "/");
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text(
-                        "LOGOUT",
-                        style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.w700),
-                      ),
-                      Icon(Icons.power_settings_new)
-                    ],
+            CupertinoButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/");
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "LOGOUT",
+                    style: TextStyle(
+                        fontSize: 18.0, fontWeight: FontWeight.w700, color: Colors.black),
                   ),
-                ))
+                  Icon(Icons.power_settings_new, color: Colors.black,)
+                ],
+              ),
+            )
           ],
         ),
       ),

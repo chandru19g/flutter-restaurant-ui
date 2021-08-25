@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/components/home_header.dart';
-import 'package:flutter_app/components/rate_order.dart';
+import 'package:flutter_app/Ui/components/home_header.dart';
+import 'package:flutter_app/Ui/components/rate_order.dart';
 
 class HistoryScreen extends StatefulWidget {
   HistoryScreen({Key? key}) : super(key: key);
